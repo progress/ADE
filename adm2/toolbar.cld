@@ -1,0 +1,25 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for toolbar - src\adm2\toolbar.cld - 05/31/1999 
+   Class Type: Progress	
+   Class Name: toolbar
+   Class DeriveFrom: src/adm2/visual.cld
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath:    
+   Class Method: toolbar.i
+   Class Property: toolprop.i
+   Class Super: toolbar.p
+   Class Prototype: toolprto.i
+   Class Template: 
+   Custom Method: toolbarcustom.i
+   Custom Property: toolpropcustom.i
+   Custom Super: toolbarcustom.p
+   Custom Prototype: toolprtocustom.i
+   Custom Exclude: toolbarexclcustom.i
+   Custom Instance: toolbardefscustom.i
+ */

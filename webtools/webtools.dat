@@ -1,0 +1,35 @@
+<!--------------------------------------------------------------------
+* Copyright (C) 2000,2014 by Progress Software Corporation. All      *
+* rights reserved. Prior versions of this work may contain portions  *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+--------------------------------------------------------------------->
+<!-- 
+  -- webtools.dat       Author: Wm.T.Wood       Date: 2/19/98 
+  -- Contains HTML listing of the INDEX options for WebTools.
+  --> 
+  
+<B><FONT SIZE = "+1">Tools:</FONT></B><br>
+<A HREF="appmgr.p">Application&nbsp;Manager</A><br> 
+<A HREF="databrw.p">Data&nbsp;Browser</A><br>
+<A HREF="editor.w">Editor</A><br> 
+<A HREF="dirlist.w?directory=.">File&nbsp;Tools</A><br> 
+<A HREF="oscommnd.w">OS&nbsp;Command</A><br> 
+<A HREF="edtscrpt.w">Scripting&nbsp;Lab</A><br> 
+
+<br>  
+<B><FONT SIZE = "+1">Reference:</FONT></B><br>
+<A HREF="session.w">Agent&nbsp;Variables</A><br>
+<A HREF="dbmain.w">Databases</A><br>
+<A HREF="promsgs.w">Messages</A><br>
+<A HREF="pplist.w">Object&nbsp;State</A><br> 
+<A HREF="propath.w">ProPath</A><br> 
+<A HREF="vstinfo.w">Virtual&nbsp;System&nbsp;Tables</A>&nbsp;<br> 
+
+<br>
+<B><FONT SIZE = "+1">Other:</FONT></B><br>
+<A HREF="http://developer.webspeed.com" TARGET="_new">Developer&nbsp;Corner</A><br>
+<A HREF="http://www.progress.com/products/openedge/features/operational-excellence/appserver/webspeed-workshop" TARGET="_new">WebSpeed&nbsp;Home</A><br>
+
+ 
+

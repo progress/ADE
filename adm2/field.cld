@@ -1,0 +1,25 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for action - src\adm2\field.cld - 06/28/1999 
+   Class Type: Progress	
+   Class Name: field
+   Class DeriveFrom: src/adm2/visual.cld
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath: src/adm2/template   
+   Class Method: field.i
+   Class Property: fieldprop.i
+   Class Super: field.p
+   Class Prototype: fieldprto.i
+   Class Template: field.w
+   Custom Method: customfield.i
+   Custom Property: customfieldprop.i
+   Custom Super: customfield.p
+   Custom Prototype: customfieldprto.i
+   Custom Exclude: customexclfield.i
+   Custom Instance: customdefsfield.i
+ */

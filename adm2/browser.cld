@@ -1,0 +1,26 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for browser - src\adm2\browser.cld - 06/03/1999 
+   Class Type: Progress	
+   Class Name: browser
+   Class DeriveFrom: src/adm2/datavis.cld
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath: src/adm2/template   
+   Class Method: browser.i
+   Class Property: brsprop.i
+   Class Super: browser.p
+   Class Prototype: brsprto.i
+   Class Template: browser.w
+   Custom Method: browsercustom.i
+   Custom Property: brspropcustom.i
+   Custom Super: browsercustom.p
+   Custom Prototype: brsprtocustom.i
+   Custom Exclude: browserexclcustom.i
+   Custom Instance: browserdefscustom.i
+ */
+

@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------------------
+    File        : <custom-defs>
+    Purpose     : Entry point to define:
+                    New definitions
+                    {&xcInstanceProperties}
+                    {&ADM-PROPERTY-DLG}
+    Syntax      : {<class-src-custom><custom-defs>}
+
+    Modified    : <today>
+    
+    Notes       : Referenced in {<class-src><class-prop>}
+  ------------------------------------------------------------------------*/
+
