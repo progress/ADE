@@ -1,0 +1,26 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for data - src\adm2\data.cld - 06/03/1999 
+   Class Type: Progress	
+   Class Name: data
+   Class DeriveFrom: src/adm2/query.cld
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath: src/adm2/template   
+   Class Method: data.i
+   Class Property: dataprop.i
+   Class Super: data.p
+   Class Prototype: dataprto.i
+   Class Template: data.w
+   Custom Method: datacustom.i
+   Custom Property: datapropcustom.i
+   Custom Super: datacustom.p
+   Custom Prototype: dataprtocustom.i
+   Custom Exclude: dataexclcustom.i
+   Custom Instance: datadefscustom.i
+ */
+

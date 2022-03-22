@@ -1,0 +1,21 @@
+<!--------------------------------------------------------------------
+* Copyright (C) 2000,2011,2013,2014 by Progress Software Corporation.*
+* All rights reserved. Prior versions of this work may contain       *
+* portions contributed by participants of Possenet.                  *
+*                                                                    *
+--------------------------------------------------------------------->
+<!-- 
+  -- webabout.dat       Author: Wm.T.Wood       Date: 2/27/98
+  -- Contains HTML listing of the About and Help options for WebSpeed.
+  -- This is the index that comes up at the bottom of WebTools index screens.
+  -- Rohit- 5/23/2014 updated copyright for 11.4.0.
+  --> 
+  
+<HR>
+<A HREF="`wsroot`/doc/wshelp/mainhelp.htm" TARGET="libraryWindow" 
+   onClick="window.open('','libraryWindow','width=630,height=400,menubar=1,toolbar=1,location=1,scrollbars=1,resizable=1,status=1');"
+   onMouseOver="window.status='Browse the contents of the on-line WebSpeed Library.'; return true;" 
+   onMouseOut="window.status=''; return true;">Help</A>
+<BR> 
+* ©1984-2015 Progress Software Corporation and/or one of its subsidiaries or affiliates. All rights reserved.*
+

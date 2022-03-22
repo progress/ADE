@@ -1,0 +1,26 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for viewer - src\adm2\viewer.cld - 06/03/1999 
+   Class Type: Progress	
+   Class Name: viewer
+   Class DeriveFrom: src/adm2/datavis.cld
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath: src/adm2/template   
+   Class Method: viewer.i
+   Class Property: viewprop.i
+   Class Super: viewer.p
+   Class Prototype: viewprto.i
+   Class Template: viewer.w
+   Custom Method: viewercustom.i
+   Custom Property: viewpropcustom.i
+   Custom Super: viewercustom.p
+   Custom Prototype: viewprtocustom.i
+   Custom Exclude: viewerexclcustom.i
+   Custom Instance: viewerdefscustom.i
+ */
+

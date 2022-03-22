@@ -1,0 +1,25 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for consumer - src\adm2\consumer.cld - 05/03/2000 
+   Class Type: Progress	
+   Class Name: consumer
+   Class DeriveFrom: src/adm2/messaging.cld
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath: src/adm2/template   
+   Class Method: consumer.i
+   Class Property: consprop.i
+   Class Super: consumer.p
+   Class Prototype: consprto.i
+   Class Template: dynconsumer.w
+   Custom Method: consumercustom.i
+   Custom Property: conspropcustom.i
+   Custom Super: consumercustom.p
+   Custom Prototype: consprtocustom.i
+   Custom Exclude: consumerexclcustom.i
+   Custom Instance: consumerdefscustom.i
+ */

@@ -1,0 +1,19 @@
+/* Class Definition for <class-name> - <class-def> - <today> 
+   Class Type: <class-type>	
+   Class Name: <class-name>
+   Class DeriveFrom: <class-derive>
+   Class SourcePath: <class-src>
+   Class RcodePath: <class-run>
+   Class TemplatePath: <class-tpl>   
+   Class Method: <class-meth>
+   Class Property: <class-prop>
+   Class Super: <class-super>
+   Class Prototype: <class-prto>
+   Class Template: <class-template>
+   Custom Method: <custom-meth>
+   Custom Property: <custom-prop>
+   Custom Super: <custom-super>
+   Custom Prototype: <custom-prto>
+   Custom Exclude: <custom-excl>
+   Custom Instance: <custom-defs>
+ */

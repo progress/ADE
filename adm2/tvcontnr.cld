@@ -1,0 +1,24 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for tvcontnr - src\adm2\tvcontnr.cld - 03/18/2002 
+   Class Type: User-Defined	
+   Class Name: tvcontnr
+   Class DeriveFrom: src/adm2/containr.cld
+   Class SourcePath: 
+   Class RcodePath: 
+   Class TemplatePath: template   
+   Class Method: tvcontnr.i
+   Class Property: tvcoprop.i
+   Class Super: tvcontnr.p
+   Class Prototype: tvcoprto.i
+   Custom Method: tvcontnrcustom.i
+   Custom Property: tvcopropcustom.i
+   Custom Super: tvcontnrcustom.p
+   Custom Prototype: tvcoprtocustom.i
+   Custom Exclude: tvcontnrexclcustom.i
+   Custom Instance: tvcontnrdefscustom.i
+ */

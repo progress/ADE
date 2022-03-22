@@ -1,0 +1,12 @@
+/*--------------------------------------------------------------------------
+    File        : <custom-excl>
+    Purpose     : Defines EXCLUDE-xxx preprocessor variables to exclude
+                  functions or internal procedures in the super procedure
+                  where it is referenced.
+    Syntax      : {<class-src-custom><custom-excl>}
+
+    Modified    : <today>
+    
+    Notes       : Referenced in <class-src><class-super>
+  ------------------------------------------------------------------------*/
+

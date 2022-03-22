@@ -1,0 +1,25 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for sax - c:\progress\wrk\src\adm2\sax.cld - 03/11/2002 
+   Class Type: User-Defined	
+   Class Name: sax
+   Class DeriveFrom: 
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath: src/adm2/template   
+   Class Method: sax.i
+   Class Property: saxprop.i
+   Class Super: sax.p
+   Class Prototype: saxprto.i
+   Class Template: sax.w
+   Custom Method: saxcustom.i
+   Custom Property: saxpropcustom.i
+   Custom Super: saxcustom.p
+   Custom Prototype: saxprtocustom.i
+   Custom Exclude: saxexclcustom.i
+   Custom Instance: saxdefscustom.i
+ */

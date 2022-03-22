@@ -1,0 +1,25 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for producer - src\adm2\producer.cld - 04/26/2000 
+   Class Type: Progress	
+   Class Name: producer
+   Class DeriveFrom: src/adm2/messaging.cld
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath: src/adm2/template   
+   Class Method: producer.i
+   Class Property: prodprop.i
+   Class Super: producer.p
+   Class Prototype: prodprto.i
+   Class Template: dynproducer.w
+   Custom Method: producercustom.i
+   Custom Property: prodpropcustom.i
+   Custom Super: producercustom.p
+   Custom Prototype: prodprtocustom.i
+   Custom Exclude: producerexclcustom.i
+   Custom Instance: producerdefscustom.i
+ */

@@ -1,0 +1,25 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for router - C:\progress\wrk\b2b\src\adm2\router.cld - 05/16/2000 
+   Class Type: User-Defined	
+   Class Name: router
+   Class DeriveFrom: C:/PROGRESS/WRK/b2b/src/adm2/xml.cld
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath: src/adm2/template   
+   Class Method: router.i
+   Class Property: routprop.i
+   Class Super: router.p
+   Class Prototype: routprto.i
+   Class Template: router.w
+   Custom Method: routercustom.i
+   Custom Property: routpropcustom.i
+   Custom Super: routercustom.p
+   Custom Prototype: routprtocustom.i
+   Custom Exclude: routerexclcustom.i
+   Custom Instance: routerdefscustom.i
+ */

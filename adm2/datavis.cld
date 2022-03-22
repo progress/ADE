@@ -1,0 +1,26 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for datavis - src\adm2\datavis.cld - 06/03/1999 
+   Class Type: Progress	
+   Class Name: datavis
+   Class DeriveFrom: src/adm2/visual.cld
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath:    
+   Class Method: datavis.i
+   Class Property: dvisprop.i
+   Class Super: datavis.p
+   Class Prototype: dvisprto.i
+   Class Template: 
+   Custom Method: dataviscustom.i
+   Custom Property: dvispropcustom.i
+   Custom Super: dataviscustom.p
+   Custom Prototype: dvisprtocustom.i
+   Custom Exclude: datavisexclcustom.i
+   Custom Instance: datavisdefscustom.i
+ */
+
