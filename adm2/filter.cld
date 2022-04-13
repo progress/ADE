@@ -1,0 +1,25 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for filter - src\adm2\filter.cld - 06/28/1999 
+   Class Type: Progress	
+   Class Name: filter
+   Class DeriveFrom: src/adm2/visual.cld
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath:    
+   Class Method: filter.i
+   Class Property: filtprop.i
+   Class Super: filter.p
+   Class Prototype: filtprto.i
+   Class Template: 
+   Custom Method: filtercustom.i
+   Custom Property: filtpropcustom.i
+   Custom Super: filtercustom.p
+   Custom Prototype: filtprtocustom.i
+   Custom Exclude: filterexclcustom.i
+   Custom Instance: filterdefscustom.i
+ */

@@ -1,0 +1,25 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for messaging - src\adm2\messaging.cld - 05/03/2000 
+   Class Type: Progress	
+   Class Name: messaging
+   Class DeriveFrom: src/adm2/smart.cld
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath:    
+   Class Method: messaging.i
+   Class Property: messprop.i
+   Class Super: messaging.p
+   Class Prototype: messprto.i
+   Class Template: 
+   Custom Method: messagingcustom.i
+   Custom Property: messpropcustom.i
+   Custom Super: messagingcustom.p
+   Custom Prototype: messprtocustom.i
+   Custom Exclude: messagingexclcustom.i
+   Custom Instance: messagingdefscustom.i
+ */

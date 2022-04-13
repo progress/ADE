@@ -1,0 +1,25 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for caller - src/adm2/caller.cld - 04/03/2002 
+   Class Type: User-Defined	
+   Class Name: caller
+   Class DeriveFrom: src/adm2/smart.cld
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath: src/adm2/template   
+   Class Method: caller.i
+   Class Property: callprop.i
+   Class Super: caller.p
+   Class Prototype: callprto.i
+   Class Template: callprocp.p
+   Custom Method: callercustom.i
+   Custom Property: callpropcustom.i
+   Custom Super: callercustom.p
+   Custom Prototype: callprtocustom.i
+   Custom Exclude: callerexclcustom.i
+   Custom Instance: callerdefscustom.i
+ */

@@ -1,0 +1,25 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for xml - C:\progress\wrk\b2b\src\adm2\xml.cld - 05/16/2000 
+   Class Type: User-Defined	
+   Class Name: xml
+   Class DeriveFrom: C:/PROGRESS/WRK/b2b/src/adm2/msghandler.cld
+   Class SourcePath: src/adm2
+   Class RcodePath: adm2
+   Class TemplatePath:    
+   Class Method: xml.i
+   Class Property: xmlprop.i
+   Class Super: xml.p
+   Class Prototype: xmlprto.i
+   Class Template: 
+   Custom Method: xmlcustom.i
+   Custom Property: xmlpropcustom.i
+   Custom Super: xmlcustom.p
+   Custom Prototype: xmlprtocustom.i
+   Custom Exclude: xmlexclcustom.i
+   Custom Instance: xmldefscustom.i
+ */

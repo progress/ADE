@@ -1,0 +1,25 @@
+/*********************************************************************
+* Copyright (C) 2000 by Progress Software Corporation. All rights    *
+* reserved. Prior versions of this work may contain portions         *
+* contributed by participants of Possenet.                           *
+*                                                                    *
+*********************************************************************/
+/* Class Definition for sbo - C:\adm91a\src\adm2\sbo.cld - 02/16/2000 
+   Class Type: User-Defined	
+   Class Name: sbo
+   Class DeriveFrom: 
+   Class SourcePath: adm2
+   Class RcodePath: adm2
+   Class TemplatePath: adm2/template   
+   Class Method: sbo.i
+   Class Property: sboprop.i
+   Class Super: sbo.p
+   Class Prototype: sboprto.i
+   Class Template: sbo.w
+   Custom Method: sbocustom.i
+   Custom Property: sbopropcustom.i
+   Custom Super: sbocustom.p
+   Custom Prototype: sboprtocustom.i
+   Custom Exclude: sboexclcustom.i
+   Custom Instance: sbodefscustom.i
+ */
