@@ -208,6 +208,16 @@ IF AbortImport NE yes THEN DO:
   IF err_msgs <> "":U THEN 
   DO:  
     RUN adecomm/_setcurs.p ("").
+    
+    if oeideisrunning and OEIDE_CanShowMessage() then
+       run ShowOKMessage in hOEIDEService(subst("&1 analyzed &2by the &3 &4.~nPlease check these problems in your file or environment:~n&5",
+                                                IF import_mode EQ "IMPORT":U  THEN "The contents of this file cannot be" ELSE "This file cannot be",
+                                                IF web_file THEN "remotely " else "",
+                                                "{&UIB_NAME}",
+                                                IF web_file THEN ' on ' + _brokerURL ELSE '':U,
+                                                err_msgs)
+                                             ,"Error":u,? ).
+    else
     MESSAGE (IF import_mode EQ "IMPORT":U 
              THEN "The contents of this file cannot be" 
              ELSE "This file cannot be")
