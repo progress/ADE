@@ -1338,14 +1338,26 @@ PROCEDURE complete_the_transaction:
                    (_L._COL - 1) * _L._COL-MULT + 1. /*    care of elsewhere.  */
                     
     IF h_self:COLUMN  > new-rc-value THEN DO:
-      IF _L._COL NE ? AND _U._TYPE NE "DIALOG-BOX" THEN 
-        h_self:COLUMN = new-rc-value.
+      IF _L._COL NE ? AND _U._TYPE NE "DIALOG-BOX" THEN
+      do: 
+        // don't set widget pos in pdsoe  
+        &if DEFINED(IDE-IS-RUNNING) <> 0 &then
+        if h_self:type <> "window" then
+        &endif  
+           h_self:COLUMN = new-rc-value.
+      end.  
       h_self:WIDTH = _L._WIDTH * _L._COL-MULT NO-ERROR.
     END.
     ELSE DO: /* Width then column */
       h_self:WIDTH = _L._WIDTH * _L._COL-MULT NO-ERROR.
       IF _L._COL NE ? AND _U._TYPE NE "DIALOG-BOX" THEN 
-        h_self:COLUMN = new-rc-value.
+      do:
+        // don't set widget pos in pdsoe  
+        &if DEFINED(IDE-IS-RUNNING) <> 0 &then
+        if h_self:type <> "window" then
+        &endif  
+          h_self:COLUMN = new-rc-value.
+      end.  
     END.
     
     /* Adjust the Height & Row combination:  If new row is less than old      */
@@ -1355,7 +1367,13 @@ PROCEDURE complete_the_transaction:
                    (_L._ROW - 1) * _L._ROW-MULT + 1.
     IF h_self:ROW > new-rc-value THEN DO:
       IF _L._ROW NE ? AND _U._TYPE NE "DIALOG-BOX":U THEN
-        h_self:ROW = new-rc-value.
+      do:
+        // don't set widget pos in pdsoe    
+        &if DEFINED(IDE-IS-RUNNING) <> 0 &then
+        if h_self:type <> "window" then
+        &endif
+           h_self:ROW = new-rc-value.
+      end.
       IF _U._TYPE NE "COMBO-BOX" THEN 
         h_self:HEIGHT = _L._HEIGHT * _L._ROW-MULT.
     END.
@@ -1363,7 +1381,13 @@ PROCEDURE complete_the_transaction:
       IF _U._TYPE NE "COMBO-BOX":U THEN 
         h_self:HEIGHT = _L._HEIGHT * _L._ROW-MULT.
       IF _L._ROW NE ? AND _U._TYPE NE "DIALOG-BOX":U THEN
-        h_self:ROW = new-rc-value.
+      do:
+        // don't set widget pos in pdsoe    
+        &if DEFINED(IDE-IS-RUNNING) <> 0 &then
+        if h_self:type <> "window" then
+        &endif
+           h_self:ROW = new-rc-value.
+      end.  
     END.  
 
     /* Don't save the name for text widgets.  For db fields, don't save
@@ -5895,8 +5919,13 @@ END PROCEDURE. /* save_off */
 PROCEDURE save_parent_info:
   /* If parent is a window, then update position in case it was moved. */
   IF parent_U._TYPE EQ "WINDOW":U AND _h_win:WINDOW-STATE EQ WINDOW-NORMAL THEN
-    ASSIGN parent_L._ROW = _h_win:ROW 
+    ASSIGN 
+           // don't set data from ui in pdsoe -   
+           // fixed widget pos is set in oeideservice.positionDesignWindow
+           &if DEFINED(IDE-IS-RUNNING) = 0 &then
+           parent_L._ROW = _h_win:ROW 
            parent_L._COL = _h_win:COLUMN
+           &endif
            /* Also, store virtual dimensions for easy comparisons, later */
            v-wdth        = parent_L._VIRTUAL-WIDTH
            v-hgt         = parent_L._VIRTUAL-HEIGHT.
@@ -5957,8 +5986,12 @@ PROCEDURE setup_for_window.
   /* Only update the Row&Col if the window is in a normal state (not minimized).
    * Otherwise, we end up with odd values. */
   IF _h_win:WINDOW-STATE EQ WINDOW-NORMAL AND _L._LO-NAME = "Master Layout" THEN DO:
+    // don't set data from ui in pdsoe -   
+    // fixed widget pos is set in oeideservice.positionDesignWindow
+    &if DEFINED(IDE-IS-RUNNING) = 0 &then   
     ASSIGN _L._ROW            = _h_win:ROW
            _L._COL            = _h_win:COLUMN.
+    &ENDIF
     /* Keep other layout in sync with master -important for stupid multi-layout */
     /* runtime tricks                                                           */
     FOR EACH x_L WHERE x_L._u-recid = _L._u-recid AND x_L._LO-NAME NE "Master Layout":

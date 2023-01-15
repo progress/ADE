@@ -592,9 +592,14 @@ FIND _C WHERE RECID(_C)   = _U._x-recid.
 /* take hold.  But, only if the window is in a 'normal' state.       */
 IF _U._LAYOUT-NAME = "Master Layout" AND _U._TYPE NE "DIALOG-BOX" AND
    _h_win:WINDOW-STATE EQ WINDOW-NORMAL THEN 
-  ASSIGN _L._ROW    = _h_win:ROW 
-         _L._COL    = _h_win:COLUMN
-         .        
+  // This is a bit questionable... _L._ROW  and _L._COL is used to manage window col and row
+  // and then it is just assigned from the handle here... 
+  // As for now at least avoid this for oeideservice and _C._EXPLICIT_POSITION 
+  // as we deliberately keep window and _L  row and col separate om PDS 
+  if OEIDEIsRunning = false or _C._EXPLICIT_POSITION = false then 
+      ASSIGN _L._ROW    = _h_win:ROW 
+             _L._COL    = _h_win:COLUMN
+             .        
 IF wndw AND p_status NE "EXPORT" THEN DO:
   PUT STREAM P_4GL UNFORMATTED SKIP (1)
    "/* *************************  Create Window  ************************** */"
