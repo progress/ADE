@@ -466,8 +466,10 @@ IF OEIDEIsRunning THEN
 DO: 
     if valid-handle( h_TreeProc)  then
         RUN createTree IN h_TreeProc (RECID(_P)).
-    
-    run positionDesignWindow in hOEIDEService (_h_win).
+    // don't do this for explicit yet. wait sfter the _l._col and _l._row is set
+    // could probably wait for all cases, but this is a late version change    
+    IF not _C._EXPLICIT_POSITION then
+        run positionDesignWindow in hOEIDEService (_h_win).    
 END.  /* oeide */  
 ELSE DO:
   /* Test the case where the window is off the screen.  Perhaps this is
@@ -517,6 +519,12 @@ IF not OEIDEIsRunning THEN
 do i = 1 to error-status:num-messages:
     message error-status:get-message(i) view-as alert-box warning.
 end.        
+else do:
+    // for explicit pos we must wait sfter the _l._col and _l._row is set
+    // could probably wait for all cases, but this is a late version change    
+    IF _C._EXPLICIT_POSITION then
+        run positionDesignWindow in hOEIDEService (_h_win).
+end.
 
 /* If we need to, restore current window settings. */
 IF set-code-win THEN
