@@ -522,7 +522,7 @@ class OpenEdge.Net.ServerConnection.ClientSocket
                 else
                     assign moReadEventArgs:BytesRead = hSocket:bytes-read
                            /* Add this data to the eventargs */
-                           moReadEventArgs:Data = new memptr(get-pointer-value(mData),
+                           moReadEventArgs:Data = new Memptr(get-pointer-value(mData),
                                                              get-size(mData)).
 
                 /* Read is terminated. We're done here.  */
@@ -550,7 +550,7 @@ class OpenEdge.Net.ServerConnection.ClientSocket
                 else
                 do:
                     /* Add this data to the eventargs */
-                    assign moReadEventArgs:Data = new memptr(get-pointer-value(mData),
+                    assign moReadEventArgs:Data = new Memptr(get-pointer-value(mData),
                                                       get-size(mData))
                            iStartTime           = mtime.
                     /* tell any listeners that we have new data */
