@@ -1,6 +1,5 @@
 /*************************************************************/
-/* Copyright (c) 2011,2015,2024 by Progress Software Corporation  */
-/*                                                           */
+/* Copyright (c) 2011,2015,2024,2026 by Progress Software Corporation  */
 /* all rights reserved.  no part of this program or document */
 /* may be  reproduced in  any form  or by  any means without */
 /* permission in writing from progress Software Corporation. */
@@ -32,6 +31,9 @@ interface OpenEdge.DataAdmin.IUser inherits IDataAdminElement:
      
      /** The Tenant of the user (as defined by the Domain) */
      define public property Tenant        as ITenant   no-undo get.   
+
+     /** User Name */
+     define public property UserName   as character no-undo get. set.
        
      /** An optional description of the user. */
      define public property Description   as character no-undo get. set.    
@@ -62,7 +64,7 @@ interface OpenEdge.DataAdmin.IUser inherits IDataAdminElement:
      define public property Telephone     as character no-undo get. set.
 
      /** An email address for the user (optional) */
-     define public property Email         as character no-undo get. set. 
+     define public property Email         as character no-undo get. set.
 
      /** Determine user is Security Admin. To be a Security Administrator, user must have:
         Write  permission on _File._Can-read
